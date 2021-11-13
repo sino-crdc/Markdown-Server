@@ -35,9 +35,9 @@ const app = http.createServer((req,res)=>{
             svg:true
         },data => {
             if(theme === 'dark'){
-                data.svg = data.svg.replace(/fill="currentColor"/g,'fill="#c0c0b7"');
+                data.svg = data.svg.replace(/fill="currentColor"/g,'fill="#c0c0c0"');
             }else{
-                data.svg = data.svg.replace(/fill="currentColor"/g,'fill="#878787"');
+                data.svg = data.svg.replace(/fill="currentColor"/g,'fill="#515151"');
 	    };
             successFn(data.svg);
         })
